@@ -1,3 +1,15 @@
+# Goal
+Understand various python concepts and functions:
+- While - break, continue and try
+- Objects and Memory References
+- Object Mutability
+- Functional Parameters (*args & **kwargs)
+- Lambda Expressions
+- Map, Filter, Zip and List Comprehension
+- Tuples and Dictionaries and how to unpack them
+- TimeIt 
+
+# Objective
 Objective of this notebook is to work on following Python usecases:
 
 1. Write a function using only list filter lambda that can tell whether a number is a Fibonacci number or not. You can use a pre-calculated list/dict to store fab numbers till 10000
