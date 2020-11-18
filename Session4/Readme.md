@@ -20,9 +20,7 @@ Understand Pytorch concepts:
   
   
   # Objective
-  Objective of this notebook is to update the this [Sentiment analysis code](Session4/2_Upgraded_Sentiment_Analysis.ipynb)
-  https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/2%20-%20Upgraded%20Sentiment%20Analysis.ipynb
-   in such a way that:
+  Objective of this notebook is to update the this [Sentiment analysis code](2_Upgraded_Sentiment_Analysis.ipynb)in such a way that:
 
    - it has 3 LSTM layers
    - for loop is used to do so in the forward function
