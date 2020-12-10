@@ -43,12 +43,14 @@ For comparing research and training models, please use the provided train/dev/te
 
 
 # Model Architecture
-classifier(
-  (embedding): Embedding(20896, 300)
-  (encoder): LSTM(300, 100, num_layers=2, batch_first=True, dropout=0.2)
-  (fc): Linear(in_features=100, out_features=3, bias=True)
-)
-The model has 6,510,703 trainable parameters
+
+	classifier(
+	  (embedding): Embedding(20896, 300)
+	  (encoder): LSTM(300, 100, num_layers=2, batch_first=True, dropout=0.2)
+	  (fc): Linear(in_features=100, out_features=3, bias=True)
+	)
+	The model has 6,510,703 trainable parameters
+
 
 # Training log
 
@@ -82,5 +84,5 @@ The model has 6,510,703 trainable parameters
 	Train Loss: 0.725 | Train Acc: 82.66%
 	 Val. Loss: 0.817 |  Val. Acc: 73.11% 
 	 
-# On Test dataset  
-Test Loss: 0.777 | Test Acc: 76.78%
+## On Test Loss and Accuracy  
+	Test Loss: 0.777 | Test Acc: 76.78%
