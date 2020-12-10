@@ -84,5 +84,5 @@ For comparing research and training models, please use the provided train/dev/te
 	Train Loss: 0.725 | Train Acc: 82.66%
 	 Val. Loss: 0.817 |  Val. Acc: 73.11% 
 	 
-## On Test Loss and Accuracy  
+## Test Loss and Accuracy  
 	Test Loss: 0.777 | Test Acc: 76.78%
