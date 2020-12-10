@@ -40,3 +40,47 @@ Please note that the datasetSentences.txt file has more sentences/lines than the
 Each row in the latter represents a snippet as shown on RT, whereas the former is each sub sentence as determined by the Stanford parser.
 
 For comparing research and training models, please use the provided train/dev/test splits.
+
+
+# Model Architecture
+classifier(
+  (embedding): Embedding(20896, 300)
+  (encoder): LSTM(300, 100, num_layers=2, batch_first=True, dropout=0.2)
+  (fc): Linear(in_features=100, out_features=3, bias=True)
+)
+The model has 6,510,703 trainable parameters
+
+# Training log
+
+	Train Loss: 0.933 | Train Acc: 61.09%
+	 Val. Loss: 0.864 |  Val. Acc: 67.80% 
+
+	Train Loss: 0.835 | Train Acc: 71.13%
+	 Val. Loss: 0.838 |  Val. Acc: 70.32% 
+
+	Train Loss: 0.801 | Train Acc: 74.69%
+	 Val. Loss: 0.817 |  Val. Acc: 73.30% 
+
+	Train Loss: 0.781 | Train Acc: 76.79%
+	 Val. Loss: 0.818 |  Val. Acc: 72.67% 
+
+	Train Loss: 0.767 | Train Acc: 78.27%
+	 Val. Loss: 0.811 |  Val. Acc: 73.81% 
+
+	Train Loss: 0.755 | Train Acc: 79.51%
+	 Val. Loss: 0.809 |  Val. Acc: 73.77% 
+
+	Train Loss: 0.746 | Train Acc: 80.46%
+	 Val. Loss: 0.810 |  Val. Acc: 73.81% 
+
+	Train Loss: 0.738 | Train Acc: 81.30%
+	 Val. Loss: 0.803 |  Val. Acc: 74.34% 
+
+	Train Loss: 0.731 | Train Acc: 82.04%
+	 Val. Loss: 0.814 |  Val. Acc: 73.39% 
+
+	Train Loss: 0.725 | Train Acc: 82.66%
+	 Val. Loss: 0.817 |  Val. Acc: 73.11% 
+	 
+# On Test dataset  
+Test Loss: 0.777 | Test Acc: 76.78%
