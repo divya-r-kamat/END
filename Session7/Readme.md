@@ -9,8 +9,6 @@ The goal is to build a sentiment analysis model using  StanfordSentimentAnalysis
 
 # Dataset 
 
-
-If you use this dataset in your research, please cite the above paper.
 This is the dataset of the paper:
 
 Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank
