@@ -52,37 +52,10 @@ For comparing research and training models, please use the provided train/dev/te
 	The model has 6,510,703 trainable parameters
 
 
-# Training log
+# Data Augmentation
 
-	Train Loss: 0.933 | Train Acc: 61.09%
-	 Val. Loss: 0.864 |  Val. Acc: 67.80% 
+Augmented the data using
+- random swap - The random swap augmentation takes a sentence and then swaps words within it n times, with each iteration working on the previously swapped sentence. 
+- random delete - As the name suggests, random deletion deletes words from a sentence. Given a probability parameter p, it will go through the sentence and decide whether to delete a word or not based on that random probability. 
+- back translation using google translate - This involves translating a sentence from our target language into one or more other languages and then translating all of them back to the original language.
 
-	Train Loss: 0.835 | Train Acc: 71.13%
-	 Val. Loss: 0.838 |  Val. Acc: 70.32% 
-
-	Train Loss: 0.801 | Train Acc: 74.69%
-	 Val. Loss: 0.817 |  Val. Acc: 73.30% 
-
-	Train Loss: 0.781 | Train Acc: 76.79%
-	 Val. Loss: 0.818 |  Val. Acc: 72.67% 
-
-	Train Loss: 0.767 | Train Acc: 78.27%
-	 Val. Loss: 0.811 |  Val. Acc: 73.81% 
-
-	Train Loss: 0.755 | Train Acc: 79.51%
-	 Val. Loss: 0.809 |  Val. Acc: 73.77% 
-
-	Train Loss: 0.746 | Train Acc: 80.46%
-	 Val. Loss: 0.810 |  Val. Acc: 73.81% 
-
-	Train Loss: 0.738 | Train Acc: 81.30%
-	 Val. Loss: 0.803 |  Val. Acc: 74.34% 
-
-	Train Loss: 0.731 | Train Acc: 82.04%
-	 Val. Loss: 0.814 |  Val. Acc: 73.39% 
-
-	Train Loss: 0.725 | Train Acc: 82.66%
-	 Val. Loss: 0.817 |  Val. Acc: 73.11% 
-	 
-## Test Loss and Accuracy  
-	Test Loss: 0.777 | Test Acc: 76.78%
