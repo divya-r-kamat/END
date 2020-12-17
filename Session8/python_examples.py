@@ -30,7 +30,7 @@ def all_unique(lst):
 def average(*args):
   return sum(args, 0.0) / len(args)
 
-# write a python function to convert a string to camelcase
+# write a python function to convert a user provided string to camelcase
 
 from re import sub
 def camel(s):
