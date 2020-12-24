@@ -1,1 +1,1 @@
-artifacts
+Artifacts of my NLP learnings
