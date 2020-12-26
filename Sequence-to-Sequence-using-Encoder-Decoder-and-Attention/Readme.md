@@ -2,7 +2,7 @@
 
 Train model1 from [Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation](https://arxiv.org/abs/1406.1078) and model2  from  [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473) on  following 4 datasets from https://kili-technology.com/blog/chatbot-training-datasets/
 
-1.  [Question-and-answer dataset] (http://www.cs.cmu.edu/~ark/QA-data/): This corpus includes Wikipedia articles, factual questions manually generated from them, and answers to these manually generated questions for use in academic research.
+1.  [Question-and-answer dataset](http://www.cs.cmu.edu/~ark/QA-data/): This corpus includes Wikipedia articles, factual questions manually generated from them, and answers to these manually generated questions for use in academic research.
 
 2. [Customer Support on Twitter](https://www.kaggle.com/thoughtvector/customer-support-on-twitter) : This Kaggle dataset includes more than 3 million tweets and responses from leading brands on Twitter.
 
