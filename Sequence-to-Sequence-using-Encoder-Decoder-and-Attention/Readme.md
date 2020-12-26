@@ -1,6 +1,6 @@
 # Sequence to Sequence Modeling 
 
-Train [model 1] and model 2 on  following 4 datasets from https://kili-technology.com/blog/chatbot-training-datasets/
+Train model1 from [Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation](https://arxiv.org/abs/1406.1078) and model2  from  [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473) on  following 4 datasets from https://kili-technology.com/blog/chatbot-training-datasets/
 
 1.  [Question-and-answer dataset](Question_Answer_Seq_2_Seq/data): This corpus includes Wikipedia articles, factual questions manually generated from them, and answers to these manually generated questions for use in academic research.
 
