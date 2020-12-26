@@ -2,7 +2,7 @@
 
 Train model 1 and model 2 on  following 4 datasets from https://kili-technology.com/blog/chatbot-training-datasets/
 
-1.  Question-and-answer dataset: This corpus includes Wikipedia articles, factual questions manually generated from them, and answers to these manually generated questions for use in academic research.
+1.  [Question-and-answer dataset](Question_Answer_Seq_2_Seq/data): This corpus includes Wikipedia articles, factual questions manually generated from them, and answers to these manually generated questions for use in academic research.
 
 2. Customer Support on Twitter: This Kaggle dataset includes more than 3 million tweets and responses from leading brands on Twitter.
 
