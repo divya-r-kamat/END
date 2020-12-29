@@ -59,7 +59,7 @@ kgimpel@ttic.edu
 8/23/2013
 
 
-#[Model1](Question_Answer_Dataset_Learning_Phrase_Representation_RNN_Encoder_Decoder.ipynb)
+# [Model1](Question_Answer_Dataset_Learning_Phrase_Representation_RNN_Encoder_Decoder.ipynb)
 
 Model Architecture
 
@@ -115,7 +115,7 @@ Test Loss
     | Test Loss: 3.558 | Test PPL:  35.110 |
        
     
-#[Model2](Question_Answer_Dataset_Sequence_to_Sequence_using_Attention.ipynb)
+# [Model2](Question_Answer_Dataset_Sequence_to_Sequence_using_Attention.ipynb)
 
 Model Architecture
 
