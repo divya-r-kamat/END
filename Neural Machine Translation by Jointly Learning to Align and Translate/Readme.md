@@ -1,7 +1,7 @@
 In this notebook on sequence-to-sequence models using PyTorch and TorchText, we'll be implementing the model from [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473) on 
 following datasets :
 
-1. [Multi30k dataset] (https://github.com/multi30k/dataset) This is a dataset with ~30,000 parallel English, German and French sentences, each with ~12 words per sentence. 
+1. [Multi30k dataset](https://github.com/multi30k/dataset) This is a dataset with ~30,000 parallel English, German and French sentences, each with ~12 words per sentence. 
 
 2.  [Question-and-answer dataset](http://www.cs.cmu.edu/~ark/QA-data/): This corpus includes Wikipedia articles, factual questions manually generated from them, and answers to these manually generated questions for use in academic research.
     [Link to Code](Question_Answer_Seq_2_Seq)
