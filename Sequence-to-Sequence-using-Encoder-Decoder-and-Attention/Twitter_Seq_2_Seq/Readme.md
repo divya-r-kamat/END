@@ -36,14 +36,14 @@ Model Architecture
 
     Seq2Seq(
       (encoder): Encoder(
-        (embedding): Embedding(2197, 256)
+        (embedding): Embedding(7928, 256)
         (rnn): GRU(256, 512)
         (dropout): Dropout(p=0.5, inplace=False)
       )
       (decoder): Decoder(
-        (embedding): Embedding(1504, 256)
+        (embedding): Embedding(3444, 256)
         (rnn): GRU(768, 512)
-        (fc_out): Linear(in_features=1280, out_features=1504, bias=True)
+        (fc_out): Linear(in_features=1280, out_features=3444, bias=True)
         (dropout): Dropout(p=0.5, inplace=False)
       )
     )
@@ -92,7 +92,7 @@ Model Architecture
 
     Seq2Seq(
       (encoder): Encoder(
-        (embedding): Embedding(2197, 256)
+        (embedding): Embedding(7928, 256)
         (rnn): GRU(256, 512, bidirectional=True)
         (fc): Linear(in_features=1024, out_features=512, bias=True)
         (dropout): Dropout(p=0.5, inplace=False)
@@ -102,13 +102,13 @@ Model Architecture
           (attn): Linear(in_features=1536, out_features=512, bias=True)
           (v): Linear(in_features=512, out_features=1, bias=False)
         )
-        (embedding): Embedding(1504, 256)
+        (embedding): Embedding(3444, 256)
         (rnn): GRU(1280, 512)
-        (fc_out): Linear(in_features=1792, out_features=1504, bias=True)
+        (fc_out): Linear(in_features=1792, out_features=3444, bias=True)
         (dropout): Dropout(p=0.5, inplace=False)
       )
     )
-
+    
 Training Log
 
     Epoch: 01 | Time: 2m 34s
