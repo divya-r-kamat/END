@@ -59,64 +59,6 @@ kgimpel@ttic.edu
 8/23/2013
 
 
-# [Model1](Question_Answer_Dataset_Learning_Phrase_Representation_RNN_Encoder_Decoder.ipynb)
-
-Model Architecture
-
-    Seq2Seq(
-      (encoder): Encoder(
-        (embedding): Embedding(2197, 256)
-        (rnn): GRU(256, 512)
-        (dropout): Dropout(p=0.5, inplace=False)
-      )
-      (decoder): Decoder(
-        (embedding): Embedding(1504, 256)
-        (rnn): GRU(768, 512)
-        (fc_out): Linear(in_features=1280, out_features=1504, bias=True)
-        (dropout): Dropout(p=0.5, inplace=False)
-      )
-    )
-
-Training Log
-
-    Epoch: 01 | Time: 0m 4s
-     Train Loss: 5.185 | Train PPL: 178.506
-      Val. Loss: 3.947 |  Val. PPL:  51.773
-    Epoch: 02 | Time: 0m 3s
-     Train Loss: 4.433 | Train PPL:  84.210
-      Val. Loss: 3.851 |  Val. PPL:  47.055
-    Epoch: 03 | Time: 0m 4s
-     Train Loss: 4.311 | Train PPL:  74.530
-      Val. Loss: 3.891 |  Val. PPL:  48.950
-    Epoch: 04 | Time: 0m 4s
-     Train Loss: 4.208 | Train PPL:  67.226
-      Val. Loss: 3.845 |  Val. PPL:  46.747
-    Epoch: 05 | Time: 0m 3s
-     Train Loss: 4.011 | Train PPL:  55.228
-      Val. Loss: 3.757 |  Val. PPL:  42.821
-    Epoch: 06 | Time: 0m 3s
-     Train Loss: 3.896 | Train PPL:  49.208
-      Val. Loss: 3.723 |  Val. PPL:  41.389
-    Epoch: 07 | Time: 0m 3s
-     Train Loss: 3.809 | Train PPL:  45.121
-      Val. Loss: 3.712 |  Val. PPL:  40.943
-    Epoch: 08 | Time: 0m 3s
-     Train Loss: 3.696 | Train PPL:  40.277
-      Val. Loss: 3.727 |  Val. PPL:  41.544
-    Epoch: 09 | Time: 0m 3s
-     Train Loss: 3.574 | Train PPL:  35.648
-      Val. Loss: 3.807 |  Val. PPL:  45.033
-    Epoch: 10 | Time: 0m 3s
-     Train Loss: 3.503 | Train PPL:  33.224
-      Val. Loss: 3.894 |  Val. PPL:  49.101
-
-Test Loss
-
-    | Test Loss: 3.558 | Test PPL:  35.110 |
-       
-    
-# [Model2](Question_Answer_Dataset_Sequence_to_Sequence_using_Attention.ipynb)
-
 Model Architecture
 
     Seq2Seq(
@@ -138,7 +80,9 @@ Model Architecture
       )
     )
 
-Training Log
+
+# [Model1](01_Question_Answer_Dataset_Sequence_to_Sequence_using_Attention.ipynb)
+
 
     Epoch: 01 | Time: 0m 8s
      Train Loss: 4.988 | Train PPL: 146.642
@@ -173,4 +117,47 @@ Training Log
 
 Test Loss
 
-    | Test Loss: 3.439 | Test PPL:  31.145 |
+     | Test Loss: 3.439 | Test PPL:  31.145 |
+       
+    
+# [Model2](02_Question_Answer_Seq2Seq_using_Attention_with_packed_padded_sequence_and_masking.ipynb)
+
+Used packed padded sequences and masking - to the model from the previous notebook. Packed padded sequences are used to tell our RNN to skip over padding tokens in our encoder. Masking explicitly forces the model to ignore certain values, such as attention over padded elements.
+   
+Training Log
+
+    Epoch: 01 | Time: 0m 7s
+     Train Loss: 5.200 | Train PPL: 181.184
+     Val. Loss: 3.921 |  Val. PPL:  50.440
+    Epoch: 02 | Time: 0m 7s
+     Train Loss: 4.331 | Train PPL:  75.987
+      Val. Loss: 3.726 |  Val. PPL:  41.507
+    Epoch: 03 | Time: 0m 7s
+     Train Loss: 4.099 | Train PPL:  60.276
+      Val. Loss: 3.727 |  Val. PPL:  41.558
+    Epoch: 04 | Time: 0m 7s
+     Train Loss: 3.887 | Train PPL:  48.765
+      Val. Loss: 3.663 |  Val. PPL:  38.987
+    Epoch: 05 | Time: 0m 7s
+     Train Loss: 3.671 | Train PPL:  39.278
+      Val. Loss: 3.580 |  Val. PPL:  35.877
+    Epoch: 06 | Time: 0m 7s
+     Train Loss: 3.413 | Train PPL:  30.355
+      Val. Loss: 3.509 |  Val. PPL:  33.425
+    Epoch: 07 | Time: 0m 7s
+     Train Loss: 3.171 | Train PPL:  23.834
+      Val. Loss: 3.536 |  Val. PPL:  34.336
+    Epoch: 08 | Time: 0m 7s
+     Train Loss: 2.901 | Train PPL:  18.193
+      Val. Loss: 3.524 |  Val. PPL:  33.914
+    Epoch: 09 | Time: 0m 7s
+     Train Loss: 2.619 | Train PPL:  13.722
+      Val. Loss: 3.506 |  Val. PPL:  33.320
+    Epoch: 10 | Time: 0m 7s
+     Train Loss: 2.333 | Train PPL:  10.309
+      Val. Loss: 3.523 |  Val. PPL:  33.884
+
+Test Loss
+    
+    | Test Loss: 3.399 | Test PPL:  29.946 |
+
