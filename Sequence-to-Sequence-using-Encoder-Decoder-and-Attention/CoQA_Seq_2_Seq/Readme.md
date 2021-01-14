@@ -12,8 +12,6 @@ CoQA contains passages from seven domains. We make five of these public under th
 - News passages are collected from the DeepMind CNN dataset which comes with Apache license.
 
 
-# [Model1](CoQA_Dataset_Learning_Phrase_Representation_RNN_Encoder_Decoder.ipynb)
-
 Model Architecture
 
     Seq2Seq(
@@ -29,6 +27,8 @@ Model Architecture
         (dropout): Dropout(p=0.5, inplace=False)
       )
     )
+    
+# [Model1](CoQA_Dataset_Learning_Phrase_Representation_RNN_Encoder_Decoder.ipynb)
 
 Training Log
 
@@ -68,7 +68,7 @@ Test Loss
      | Test Loss: 5.729 | Test PPL: 307.551 |
        
     
-# [Model2](CoQA_Dataset_Sequence_to_Sequence_using_Attention.ipynb)
+# [Model2](02_CoQA_Seq2Seq_using_Attention_with_packed_padded_sequence_and_masking.ipynb)
 
 Model Architecture
 
