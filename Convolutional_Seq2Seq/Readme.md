@@ -19,6 +19,17 @@ Neural networks can only learn to find patterns in numerical data and so, before
 
 The following image illustrates how the convolutional “filter” slides over a sentence, three words at a time. This is called a 1D convolution because the kernel is moving in only one dimension. It computes an element-wise product of the weights of each word, multiplied by the weights assigned to the convolutional filter.The resultant output will be a feature vector that contains about as many values as there were in input embeddings, so the input sequence size does matter. 
 
+![cnn](download.gif)
 
+A convolutional neural network will include many of these kernels (filters), and, as the network trains, these kernel weights are learned. Each kernel is designed to look at a word, and surrounding word(s) in a sequential window, and output a value that captures something about that phrase. In this way, the convolution operation can be viewed as window-based feature extraction.
+
+# How convolutional sequence to sequence model work?
+
+An architecture proposed by authors for sequence to sequence
+modeling is entirely convolutional.
+Below diagram outlines the structure of convolutional sequence to sequence model.
+![](https://github.com/bentrevett/pytorch-seq2seq/raw/9479fcb532214ad26fd4bda9fcf081a05e1aaf4e/assets/convseq2seq0.png)
+
+Like any RNN based sequence to sequence structure CNN based model uses encoder decoder architecture, however here both encoder and decoder are composed of stacked convolutional layers with a special type of activation function called Gated Linear Units. In the middle there is a attention function. The encoder extracts features from the source sequence, while decoder learns to estimate the function that maps the encoders hidden state and its previous generated words to the next word. The attention tells the decoder which hidden states of the encoder to focus on. 
 
 
