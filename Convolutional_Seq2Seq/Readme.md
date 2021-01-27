@@ -30,6 +30,43 @@ modeling is entirely convolutional.
 Below diagram outlines the structure of convolutional sequence to sequence model.
 ![](https://github.com/bentrevett/pytorch-seq2seq/raw/9479fcb532214ad26fd4bda9fcf081a05e1aaf4e/assets/convseq2seq0.png)
 
-Like any RNN based sequence to sequence structure CNN based model uses encoder decoder architecture, however here both encoder and decoder are composed of stacked convolutional layers with a special type of activation function called Gated Linear Units. In the middle there is a attention function. The encoder extracts features from the source sequence, while decoder learns to estimate the function that maps the encoders hidden state and its previous generated words to the next word. The attention tells the decoder which hidden states of the encoder to focus on. 
+Like any RNN based sequence to sequence structure CNN based model uses encoder decoder architecture, however here both encoder and decoder are composed of stacked convolutional layers with a special type of activation function called Gated Linear Units. In the middle there is a attention function. The encoder extracts features from the source sequence, while decoder learns to estimate the function that maps the encoders hidden state and its previous generated words to the next word. The attention tells the decoder which hidden states of the encoder to focus on.
+A concept of positional embedding, is been introduced in this model.  The paper also applies residual connection between the blocks in both the encoder and the decoder, which allows for deeper convolutional network.
 
 
+# Training
+
+    Epoch: 01 | Time: 1m 10s
+      Train Loss: 4.209 | Train PPL:  67.299
+       Val. Loss: 3.017 |  Val. PPL:  20.431
+    Epoch: 02 | Time: 1m 14s
+      Train Loss: 3.035 | Train PPL:  20.792
+       Val. Loss: 2.388 |  Val. PPL:  10.893
+    Epoch: 03 | Time: 1m 14s
+      Train Loss: 2.609 | Train PPL:  13.583
+       Val. Loss: 2.132 |  Val. PPL:   8.433
+    Epoch: 04 | Time: 1m 14s
+      Train Loss: 2.376 | Train PPL:  10.761
+       Val. Loss: 2.004 |  Val. PPL:   7.415
+    Epoch: 05 | Time: 1m 14s
+      Train Loss: 2.217 | Train PPL:   9.175
+       Val. Loss: 1.911 |  Val. PPL:   6.758
+    Epoch: 06 | Time: 1m 14s
+      Train Loss: 2.096 | Train PPL:   8.137
+       Val. Loss: 1.859 |  Val. PPL:   6.416
+    Epoch: 07 | Time: 1m 13s
+      Train Loss: 2.015 | Train PPL:   7.502
+       Val. Loss: 1.810 |  Val. PPL:   6.111
+    Epoch: 08 | Time: 1m 14s
+      Train Loss: 1.937 | Train PPL:   6.938
+       Val. Loss: 1.784 |  Val. PPL:   5.952
+    Epoch: 09 | Time: 1m 14s
+      Train Loss: 1.877 | Train PPL:   6.533
+       Val. Loss: 1.769 |  Val. PPL:   5.863
+    Epoch: 10 | Time: 1m 13s
+      Train Loss: 1.819 | Train PPL:   6.168
+       Val. Loss: 1.737 |  Val. PPL:   5.680
+       
+ # Test Loss
+ 
+    | Test Loss: 1.798 | Test PPL:   6.035 |
